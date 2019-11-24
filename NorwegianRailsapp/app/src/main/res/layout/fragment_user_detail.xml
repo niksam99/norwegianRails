@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/userdetail_background"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <LinearLayout
+                android:background="@drawable/userdetail_background"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_person"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_person_black"/>
+                <TextView
+                    android:id="@+id/name"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="@string/name"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_mail"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="@string/email"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_create"/>
+                <TextView
+                    android:id="@+id/create"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="@string/email"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</FrameLayout>

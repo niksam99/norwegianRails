@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Ticket">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/app_name"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/name"
+        android:id="@+id/recycler_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Please Login to get ticket detail."
+        android:textColor="@color/design_default_color_error"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
